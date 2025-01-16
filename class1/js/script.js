@@ -6,5 +6,6 @@ function setup() {
 }
 
 function draw() {
-
+    createCanvas(680,680)
+    background('black')
 }
