@@ -29,5 +29,12 @@ function setup(){
     console.log(document.querySelectorAll(".square_shape").length);
     console.log(document.querySelectorAll(".square_shape")[0]);
 
+    //Change content of an element
+    console.log(document.getElementById("two").innerHTML);
 
+
+    console.log(document.getElementById("two").textContent);
+
+    console.log(document.querySelector("#five").getAttribute("id"));
+    console.log(document.querySelector("#five").getAttribute("class"));
 }
