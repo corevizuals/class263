@@ -6,24 +6,25 @@ console.log("we are a go!")
 /*** ALL ANWSERS TO BE ADDED IN THE ALLOCATED SPACE */
 /*** START PART ONE ACCESS */ 
 /* 1: all paragraph elements */
-/***CODE */
-/***OUTPUT: 
+/***CODE */ console.log(document.querySelectorAll("p"));
+/***OUTPUT: using the console.log, it will display all the paragraphs
  * 
  */
+//
 
 
 /*************************************** */
 /* 2: only the first paragraph element */
-/***CODE */
-/***OUTPUT: 
+/***CODE */ console.log(document.querySelector("#one"));
+/***OUTPUT: using the console.log, it will display the first paragraph element
  * 
  */
 
 
 /*************************************** */
 /* 3: all elements with the class inner-container */
-/***CODE */
-/***OUTPUT: 
+/***CODE */ console.log(document.getElementsByClassName("inner-container"));
+/***OUTPUT: using the console.log, it will display all the elements with the class inner-container
  * 
  */
 
