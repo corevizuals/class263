@@ -1,3 +1,5 @@
 window.onload = setup
 function setup(){
-    con
+    console.log("running setup");
+    document.write("<p>HELLO WORLD AFTER LOAD IN FUNCTION</p>");
+}

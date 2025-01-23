@@ -7,7 +7,7 @@ console.log("we are a go!")
 /*** START PART ONE ACCESS */ 
 /* 1: all paragraph elements */
 /***CODE */ console.log(document.querySelectorAll("p"));
-/***OUTPUT: using the console.log, it will display all the paragraphs
+/***OUTPUT: NodeList(9) [p#1, p#2.img-descript, p#3.img-descript, p#4.img-descript, p#5.img-descript, p#6.img-descript, p#7.img-descript, p#8.img-descript, p#9.img-descript]
  * 
  */
 //
@@ -16,41 +16,44 @@ console.log("we are a go!")
 /*************************************** */
 /* 2: only the first paragraph element */
 /***CODE */ console.log(document.querySelector("#one"));
-/***OUTPUT: using the console.log, it will display the first paragraph element
- * 
+/***OUTPUT: NodeList(9) [p#1]
  */
 
 
 /*************************************** */
 /* 3: all elements with the class inner-container */
 /***CODE */ console.log(document.getElementsByClassName("inner-container"));
-/***OUTPUT: using the console.log, it will display all the elements with the class inner-container
+/***OUTPUT: HTMLCollection(8) [div.inner-container, div.inner-container, div.inner-container, div.inner-container, div.inner-container, div.inner-container, div.inner-container, div.inner-container]
  * 
  */
 
 
 /*************************************** */
 /* 4: the last image element inside the element that has the class img-container */
-/***CODE */
-/***OUTPUT: 
+/***CODE */console.log(document.getElementsByClassName("img-image"));
+/***OUTPUT: NodeList(9) [p#1, p#2.img-descript, p#3.img-descript, p#4.img-descript, p#5.img-descript, p#6.img-descript, p#7.img-descript, p#8.img-descript, p#9.img-descript]
  * 
  */
 
 
 /*************************************** */
 /* 5A: all h2 elements */
-/* 5B: length of the list in 5A */
+/* 5B: length of the list in 5A */ 
 /* 5C: the text content of the first element in the list from 5A */
-/***CODE */
-/***OUTPUT: 
+/***CODE */ console.log(document.querySelectorAll("h2"));
+console.log(document.getElementsByClassName("inner-container").length);
+console.log(document.querySelector("h2").textContent);
+/***OUTPUT: NodeList [h2]
+script.js:44 8
+script.js:45 The header of this fancy page
  * 
  */
 
 
 /*************************************** */
 /* 6: the element with id name parent */
-/***CODE */
-/***OUTPUT: 
+/***CODE */ console.log(document.getElementById("parent"));
+/***OUTPUT: script.js:55 <section id=​"parent">​…​</section>​flex
  * 
  */
 
